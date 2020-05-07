@@ -49,7 +49,7 @@ Plug 'phanviet/vim-monokai-pro'
 "undo history visualizer
 Plug 'mbbill/undotree'
 
-"Language pack
+"Solid Language pack
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
