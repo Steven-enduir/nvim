@@ -28,16 +28,32 @@ set updatetime=50
 
 call plug#begin('~/.vim/plugged')
 
+"best autocomplete in the world
 Plug 'ycm-core/YouCompleteMe'
+
+"Dark theme
 Plug 'joshdick/onedark.vim'
+
+"Tree explorer
 Plug 'scrooloose/nerdtree'
+
+"Combines Nerdtree and tabs, but no longer active
 Plug 'jistr/vim-nerdtree-tabs'
+
+"Git Wrapper
 Plug 'tpope/vim-fugitive'
+
+"Vibrant color theme
 Plug 'phanviet/vim-monokai-pro'
+
+"undo history visualizer
 Plug 'mbbill/undotree'
+
+"Language pack
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
+"Set current colorTheme
 colorscheme onedark
 
