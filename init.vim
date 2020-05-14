@@ -52,6 +52,9 @@ Plug 'mbbill/undotree'
 "Solid Language pack
 Plug 'sheerun/vim-polyglot'
 
+"ThePrimeagen vim be good
+Plug 'ThePrimeagen/vim-be-good'
+
 call plug#end()
 
 "Set current colorTheme
