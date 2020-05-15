@@ -34,6 +34,9 @@ Plug 'ycm-core/YouCompleteMe'
 "Dark theme
 Plug 'joshdick/onedark.vim'
 
+"Purple theme
+Plug 'yassinebridi/vim-purpura'
+
 "Tree explorer
 Plug 'scrooloose/nerdtree'
 
@@ -58,5 +61,5 @@ Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
 
 "Set current colorTheme
-colorscheme onedark
+colorscheme purpura
 
