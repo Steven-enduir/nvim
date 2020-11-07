@@ -18,6 +18,13 @@ set undofile
 set incsearch
 set termguicolors
 
+"Set version cursor highlight as well"
+set cursorcolumn
+highlight cursorcolumn guibg=#404040
+
+" Set numberline to be based off cursor location"
+set number relativenumber
+
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -58,8 +65,11 @@ Plug 'sheerun/vim-polyglot'
 "ThePrimeagen vim be good
 Plug 'ThePrimeagen/vim-be-good'
 
+
 call plug#end()
 
 "Set current colorTheme
 colorscheme purpura
 
+"Keybind mapping:"
+imap jj <esc>
