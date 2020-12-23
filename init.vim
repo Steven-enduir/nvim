@@ -71,6 +71,9 @@ Plug 'sheerun/vim-polyglot'
 "ThePrimeagen vim be good
 Plug 'ThePrimeagen/vim-be-good'
 
+"ThePrimeagen Harpoon, terminal nav for nvim
+Plug 'ThePrimeagen/harpoon'
+
 "NVIM built in LSP support
 Plug 'neovim/nvim-lspconfig'
 
