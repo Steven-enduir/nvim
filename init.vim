@@ -18,6 +18,9 @@ set undofile
 set incsearch
 set termguicolors
 
+"Add ref to coc config file
+source $HOME/.config/nvim/plug-config/coc.vim
+
 "Set version cursor highlight as well"
 set cursorcolumn
 highlight cursorcolumn guibg=#404040
@@ -35,8 +38,11 @@ set updatetime=50
 
 call plug#begin('~/.vim/plugged')
 
-"best autocomplete in the world
-Plug 'ycm-core/YouCompleteMe'
+"best autocomplete in the world, trying out coc for awhile
+"Plug 'ycm-core/YouCompleteMe'
+
+"Maybe the best autocomplete in the world?
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Dark theme
 Plug 'joshdick/onedark.vim'
@@ -65,6 +71,8 @@ Plug 'sheerun/vim-polyglot'
 "ThePrimeagen vim be good
 Plug 'ThePrimeagen/vim-be-good'
 
+"NVIM built in LSP support
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
