@@ -40,7 +40,7 @@ call plug#begin('~/.vim/plugged')
 "Plug 'ycm-core/YouCompleteMe'
 
 "Maybe the best autocomplete in the world?
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -54,6 +54,10 @@ Plug 'yassinebridi/vim-purpura'
 
 "Tree explorer
 Plug 'scrooloose/nerdtree'
+
+"C# autoComplete
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
 
 "Combines Nerdtree and tabs, but no longer active
 Plug 'jistr/vim-nerdtree-tabs'
@@ -91,6 +95,9 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'dbeniamine/cheat.sh-vim'
 
 call plug#end()
+
+"Plugin config
+let g:OmniSharp_srver_stdio = 1
 
 "Set current colorTheme
 colorscheme purpura
