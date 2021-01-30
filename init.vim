@@ -13,13 +13,12 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set termguicolors
 
 "Add ref to coc config file
-source $HOME/.config/nvim/plug-config/coc.vim
+"source $HOME/.config/nvim/plug-config/coc.vim
 
 "Set version cursor highlight as well"
 set cursorcolumn
@@ -27,7 +26,6 @@ highlight cursorcolumn guibg=#404040
 
 " Set numberline to be based off cursor location"
 set number relativenumber
-
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -42,7 +40,11 @@ call plug#begin('~/.vim/plugged')
 "Plug 'ycm-core/YouCompleteMe'
 
 "Maybe the best autocomplete in the world?
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Neovim Tree shitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
 
 "Dark theme
 Plug 'joshdick/onedark.vim'
@@ -76,6 +78,17 @@ Plug 'ThePrimeagen/harpoon'
 
 "NVIM built in LSP support
 Plug 'neovim/nvim-lspconfig'
+
+"Telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+"Additional C++ Highlighting
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+"Cheat Sheet
+Plug 'dbeniamine/cheat.sh-vim'
 
 call plug#end()
 
