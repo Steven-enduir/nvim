@@ -53,7 +53,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'yassinebridi/vim-purpura'
 
 "Tree explorer
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 
 "C# autoComplete
 Plug 'OmniSharp/omnisharp-vim'
