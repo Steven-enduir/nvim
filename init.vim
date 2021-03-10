@@ -39,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 "best autocomplete in the world, trying out coc for awhile
 "Plug 'ycm-core/YouCompleteMe'
 
-"Maybe the best autocomplete in the world?
+"Maybe the best autocomplete in the world? 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Neovim Tree shitter
