@@ -1,8 +1,35 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python"],
-
-  // python config
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true
-
+  "suggest.noselect": false,
+  "diagnostic.errorSign": "✘",
+  "diagnostic.warningSign": "!",
+  "diagnostic.infoSign": "?",
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly":false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "html",
+    "json",
+    "css",
+    "scss",
+    "go"
+  ],
+  "hover.target": "echo",
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": [
+        "go.mod",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "filetypes": [
+        "go"
+      ]
+    }
+  },
+  "go.goplsOptions": {
+    "staticcheck": true
+  }
 }
